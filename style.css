@@ -1,0 +1,186 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Rose White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: #F3E5D7;
+  font-size: 16px;
+  font-family: 'Young Serif';
+  text-align: left;
+  color: var(--WengeBrown);
+  margin: 50px;
+}
+
+#insideBlock {
+  background-color: white;
+  width: 40%;
+  margin: 50px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+  align-items: center;
+}
+
+header {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 20px;
+  font-family: 'Outfit', serif;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
+
+article {
+  background-color: hsl(330, 100%, 98%);
+  margin: 20px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+h1 {
+  margin: 10px;
+  color: #840025;
+}
+
+.bolderText {
+  font-weight: 600;
+}
+
+h2 {
+  text-align: left;
+  color: rgba(145, 44, 44, 0.797);
+  margin: 20px;
+}
+
+li::marker {
+  color: #840025;
+  font-weight: 600;
+}
+
+li {
+  font-family: 'Outfit';
+  margin-right: 50px;
+}
+
+th {
+  font-family: 'Outfit';
+}
+
+td {
+  font-family: 'Young Serif', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: brown;
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  position: relative;
+}
+
+th::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0px;
+  height: 1px;
+  background-color: var(--LightGrey);
+}
+
+td::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2px;
+  right: 20px;
+  height: 1px;
+  background-color: var(--LightGrey);
+}
+
+tr:last-child td::after, tr:last-child th::before {
+  content: none;
+}
+
+.ingredients, .instructions {
+  position: relative;
+}
+
+.ingredients::after, .instructions::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  margin: 20px;
+  height: 1px;
+  background-color: var(--LightGrey);
+}
+
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #insideBlock {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  header {
+    font-size: 30px;
+  }
+}
+
+
+
+@media (min-width: 10px) and (max-width: 600px) {
+  body {
+    margin: 0px;
+    background-color: white;
+  }
+
+  #insideBlock {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+      background-color: white;
+      border-radius: 0px;
+      font-size: larger;
+
+    }
+  
+
+  header {
+   font-size: 3rem;
+   text-align: left;
+   margin-left: 10px;
+
+
+  }
+
+  img {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 0%;
+  }
+
+
+}
