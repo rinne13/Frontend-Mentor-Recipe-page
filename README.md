@@ -3,10 +3,11 @@ This is a clean and simple webpage to display recipes. It shows a recipe with al
 
 What it does:
 
-Displays a recipe with preparation and cooking time.
-Lists all the necessary ingredients.
-Provides clear step-by-step cooking instructions.
-Shows basic nutritional information for the recipe.
+- Displays a recipe with preparation and cooking time.
+- Lists all the necessary ingredients.
+- Provides clear step-by-step cooking instructions.
+- Shows basic nutritional information for the recipe.
+
 Technologies used:
 
 HTML: For structuring the page.
